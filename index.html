@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <!-- fuente Chivo+Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
+        
+    <!-- audio iconos on off-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="script.js" type="text/javascript" defer></script>
+    <link href="styles.css" rel="stylesheet" />
+
+</head>
+
+
+    <style>  /* icono de audio google fonts */
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+        }
+    </style>
+
+
+<body>
+
+    
+   
+    <div class="container">
+
+        <form action="" onsubmit="buscarPokemon(event)">  
+            <input type="text" name="pokemon" autocomplete="off" placeholder="Ingresa nombre o n°">
+        </form>
+
+        <span id="playButton" class="material-symbols-outlined">
+            volume_up
+        </span>
+
+        <audio id="miAudio">
+            <source src="Pokemon_National_Park.mp3" type="audio/mpeg">
+        </audio>
+          
+        
+        <div class="pkm-name">Pokedex</div> 
+        <div class="img-container"> 
+            <img class="pkm-img" src="poke-shadow.png"/> 
+            <img class="pkm-shiny" src="poke-shadow.png"/>
+        </div>
+        <div class="pkm-id"></div> 
+        <div class="pkm-types"></div> 
+
+        <div class="pkm-hightWight">
+            <div class="pkm-hight"></div>
+            <div class="pkm-wight"></div>
+        </div>
+        
+        <div class="pkm-stats"></div> <!-- stats hp, defensa, attack etc -->
+        <div class="habilidades" ></div>
+        
+    </div>
+
+   
+
+</body>
+</html>

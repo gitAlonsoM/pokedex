@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo Mono', monospace;
+   
+}
+
+body{
+    background-color: #4D4C55;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%234D4C55' cx='50' cy='0' r='50'/%3E%3Cg fill='%2353545e' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%235a5c66' cx='50' cy='100' r='50'/%3E%3Cg fill='%2360646f' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23666d77' cx='50' cy='200' r='50'/%3E%3Cg fill='%236d7680' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23737e88' cx='50' cy='300' r='50'/%3E%3Cg fill='%237a8791' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23819099' cx='50' cy='400' r='50'/%3E%3Cg fill='%238899a1' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%238fa2a9' cx='50' cy='500' r='50'/%3E%3Cg fill='%2397abb1' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%239eb5b9' cx='50' cy='600' r='50'/%3E%3Cg fill='%23a6bec0' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23afc7c8' cx='50' cy='700' r='50'/%3E%3Cg fill='%23b7d0cf' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c1dad6' cx='50' cy='800' r='50'/%3E%3Cg fill='%23cae3de' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d4ece5' cx='50' cy='900' r='50'/%3E%3Cg fill='%23def6ec' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23E9FFF3' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+    }
+
+
+
+input {
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 20px;
+}
+    
+
+.container {
+    position: relative; /*Usado para dejar fijo el icono de audio en el lado derecho superior */
+    max-width:600px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(242, 181, 84) 0%, rgb(234, 46, 8) 90% );
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    
+}
+
+
+.img-container {
+   display:flex;
+   justify-content: space-around;
+    
+}
+
+.img-container img{
+    border-radius: 10%;  
+    width: 48%;
+    border: 1px solid black;
+}
+
+.pkm-id{
+    font-size: 20px;
+    font-weight: bold;  
+    margin: 10px auto;  
+    color: white; 
+}
+
+.pkm-name{
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.pkm-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: rgb(227, 231, 234);
+    font-weight: bold;
+    font-size: 25px;
+    margin: auto;
+    width: 96%;
+    /* usando text-shadow para agregar bordes al texto */
+    text-shadow: 1px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000; 
+}
+
+.pkm-hightWight div{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+}
+.pkm-stats div{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+    
+}
+
+.habilidades{
+    color: white;
+    font-size: 25px;
+}
+
+
+
+#playButton{
+    position: absolute;  /* usado para posicionarse con respecto a su elemento contenedor, por eso es necesario que su elemento contenedor tenga posicion relative, para que esto funcione bien */
+    top: 40px;
+    right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+  
+
+
+@media (max-width: 370px) { /* solo quede una img */
+    .pkm-shiny {
+    display: none;
+    }
+    #playButton{
+        right: 20px;
+    }
+}
+    
+    
